@@ -51,14 +51,15 @@ div.entry__content img{
   margin:0 auto 0 auto;
 }
 p.blog-copy{
-  max-width: 900px;
+  /* max-width: 900px; */
   padding:0 20% 0 20%;
   text-align: justify;
   font-size: 16px;
 }
 
-p.blog .one{
+.one{
   font-size: 20px;
+  margin-top:20px;
 }
 p.blog .one::first-letter{
   font-size: 30px;
@@ -100,9 +101,7 @@ li {
 
 .entry__related h3 {
   font-size: 24px;
-  margin-top: 0;
-  margin: 0 0 50px 0;
-  padding-left:180px;
+  margin:20px 0 20px 280px;
 }
 
 .entry__related h5 {
@@ -115,7 +114,7 @@ li {
 ul.related {
   overflow: hidden;
   list-style: none;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 li.related__item {

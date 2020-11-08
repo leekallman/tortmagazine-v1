@@ -1,20 +1,24 @@
 /*about page*/
-   div.left-banner p{
-    font-size: 100px;
-    position: fixed;
-    top: 58%;
-    left: 1.8%;
-    transform-origin: 0 0;
-    transform: rotate(-90deg) translate(-50%, 0);
-    mix-blend-mode: overlay;
-    letter-spacing: -1px;
-    z-index: 10000;
-    color:#ff6338;
-  }
+div.left-banner p{
+  font-size: 100px;
+  position: fixed;
+  top: 58%;
+  left: 1.8%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translate(-50%, 0);
+  mix-blend-mode: overlay;
+  letter-spacing: -1px;
+  z-index: 10000;
+  color:#ff6338;
+}
 
 /*general*/
-section.story, section.description, section.team, section.contact{
+section.story, section.description, section.team{
   height: 80vh;
+}
+
+section.contact{
+  height:125vh;
 }
 h2.story-heading, h2.description-heading, h2.team-heading, h2.contact-heading, h2.blog-heading, h2.support-us, h2.archive-heading{
   margin-top:50px;
@@ -32,18 +36,18 @@ div.story-img{
   left:10%;
   top:30%;
 }
-  section.story img{
-    transition: all 0.5s ease;
-    max-width: 70%;
-  }
-    section.story :hover img{
-      transform: translateY(2%) scale(0.99);
-    }
-  h2.story-heading{
+section.story img{
+  transition: all 0.5s ease;
+  max-width: 70%;
+}
+section.story :hover img{
+  transform: translateY(2%) scale(0.99);
+}
+h2.story-heading{
   margin-top:80px;
   position: absolute;
   right:47%;
-  }
+}
 section.story div.box{
   position: absolute;
   top:40%;
@@ -52,44 +56,44 @@ section.story div.box{
   max-height: 400px;
   overflow: scroll;
 }
-  p.story-copy{
-    font-size: 16px;
-    max-width: 600px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
+p.story-copy{
+  font-size: 16px;
+  max-width: 600px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 p.story-copy::first-letter{
   font-size: 30px;
 }
- .sign{
+.sign{
   margin-top:0;
   font-size: 20px;
   font-family: 'Nothing You Could Do', cursive;
-  }
-    section.story a{
-      color:#ff6338;
-    }
-    a[data-tool-tip]{
-      position: relative;
-    }
-    a[data-tool-tip]::after{
-      content:attr(data-tool-tip);
-      display:block;
-      position: absolute;
-      background-color: #ff6338;
-      padding:0.5em 1em;
-      color:#000;
-      border-radius: 3px;
-      font-size: 0.8em;
-      bottom:1em;
-      left:-8em;
-      white-space: nowrap;
-      transform: scale(0);
-      transition:transform ease-out 200ms, bottom ease-out 200ms;;
-    }
-    a[data-tool-tip]:hover::after{
-      transform: scale(1);
-    }
+}
+section.story a{
+  color:#ff6338;
+}
+a[data-tool-tip]{
+  position: relative;
+}
+a[data-tool-tip]::after{
+  content:attr(data-tool-tip);
+  display:block;
+  position: absolute;
+  background-color: #ff6338;
+  padding:0.5em 1em;
+  color:#000;
+  border-radius: 3px;
+  font-size: 0.8em;
+  bottom:1em;
+  left:-8em;
+  white-space: nowrap;
+  transform: scale(0);
+  transition:transform ease-out 200ms, bottom ease-out 200ms;;
+}
+a[data-tool-tip]:hover::after{
+  transform: scale(1);
+}
 
 
 /*description section*/
@@ -99,13 +103,13 @@ div.description-img{
   top:120%;
   right:-20%;
 }
-  section.description img{
-    max-width: 40%;
-    transition: all 0.5s ease;
-  }
-  section.description :hover img{
-    transform: translateY(2%) scale(0.99);
-  }
+section.description img{
+  max-width: 40%;
+  transition: all 0.5s ease;
+}
+section.description :hover img{
+  transform: translateY(2%) scale(0.99);
+}
 
 section.description div.box{
   position: absolute;
@@ -113,63 +117,63 @@ section.description div.box{
   left:20%;
   max-width: 500px;
 }
-  p.description-copy{
-    font-size: 30px;
-    font-family: 'HelveticaNeueLight', sans-serif;
-    text-align: center;
-  }
-  p.description-copy::before{
-    content:open-quote;
-    font-size: 1em;
-  }
+p.description-copy{
+  font-size: 30px;
+  font-family: 'HelveticaNeueLight', sans-serif;
+  text-align: center;
+}
+p.description-copy::before{
+  content:open-quote;
+  font-size: 1em;
+}
 
-  p.description-copy::after{
-    content:close-quote;
-    font-size: 1em;
-  }
+p.description-copy::after{
+  content:close-quote;
+  font-size: 1em;
+}
 
-  .description-img .rot-up{
-    font-size: 16px;
-    top:-8%;
-    left:20%;
-    position: absolute;
-    transform:translate(-50%, 0);
-  }
-    .description-img .rot-right{
-    font-size: 16px;
-    position: absolute;
-    top: -5%;
-    left:11.5%;
-    transform-origin: 50% 0;
-    transform: rotate(90deg) translate(50%, 0);
-  }
-  .description-img .rot-down{
-    font-size: 16px;
-    position: absolute;
-    right:0%;
-    transform-origin: -50% 0;
-    transform: rotate(180deg) translate(-50%, 0);
-  }
-   .description-img .rot-left{
-    font-size: 16px;
-    position: absolute;
-    top: 140%;
-    right: -90px;
-    transform-origin: -100% 0;
-    transform: rotate(-90deg) translate(-50%, 0);
-  }
+.description-img .rot-up{
+  font-size: 16px;
+  top:-8%;
+  left:20%;
+  position: absolute;
+  transform:translate(-50%, 0);
+}
+.description-img .rot-right{
+  font-size: 16px;
+  position: absolute;
+  top: -5%;
+  left:11.5%;
+  transform-origin: 50% 0;
+  transform: rotate(90deg) translate(50%, 0);
+}
+.description-img .rot-down{
+  font-size: 16px;
+  position: absolute;
+  right:0%;
+  transform-origin: -50% 0;
+  transform: rotate(180deg) translate(-50%, 0);
+}
+.description-img .rot-left{
+  font-size: 16px;
+  position: absolute;
+  top: 140%;
+  right: -90px;
+  transform-origin: -100% 0;
+  transform: rotate(-90deg) translate(-50%, 0);
+}
 
 /*  values banner*/
 .about-banner{
   overflow-x:hidden;
 }
- .about-values{
+.about-values{
   font-family: 'HelveticaNeueLight', sans-serif;
   font-size:80px;
   font-weight: 400;
   color:#fbff47;
   position: absolute;
-  top:250%;
+  top:260%;
   transform:translate(-10%);
   white-space: nowrap;
 }
@@ -182,27 +186,27 @@ div.team-img{
   left:10%;
   max-width: 50%;
 }
-  section.team img{
+section.team img{
   max-width: 700px;
   transition: all 0.5s ease;
-  }
+}
 
-  section.team :hover img{
+section.team :hover img{
   transform: scale(0.99);
-  }
+}
 section.team div.box{
   position: absolute;
   right:10%;
   overflow:hidden;
   top:192%;
 }
-  p.team-copy{
-    float:left;
-    margin-right:10px;
-    max-width:150px;
-    font-size: 16px;
-    text-align: right;
-  }
+p.team-copy{
+  float:left;
+  margin-right:10px;
+  max-width:150px;
+  font-size: 16px;
+  text-align: right;
+}
 div.chart{
   max-width: 50%;
   margin-left:10px;
@@ -211,19 +215,19 @@ div.chart{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-
+  
 }
-  h4{
-    margin-bottom:0;
-  }
-  ul{
-    list-style-type: none;
-    padding: 0;
-    margin:0;
-  }
-  div.chart li{
-    margin:0;
-  }
+h4{
+  margin-bottom:0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+div.chart li{
+  margin:0;
+}
 
 
 /*contact section*/
@@ -237,7 +241,7 @@ section.contact img{
   transition: all 0.5s ease;
 }
 section.contact :hover img{
-   transform: translateY(-2%) scale(0.99);
+  transform: translateY(-2%) scale(0.99);
 }
 section.contact div.box{
   position: absolute;
@@ -250,20 +254,20 @@ address{
 h2.contact-heading{
   text-align: right;
 }
-  address p{
-    font-style: normal;
-    text-align: right;
-    font-size: 16px;
-  }
+address p{
+  font-style: normal;
+  text-align: right;
+  font-size: 16px;
+}
 
-  address a{
-    text-decoration: none;
-    font-style: normal;
-    color:#000;
-    font-size: 16px;
-  }
+address a{
+  text-decoration: none;
+  font-style: normal;
+  color:#000;
+  font-size: 16px;
+}
 
-  address a:hover{
-    color:  #ff6338;
-    transition: all 0.5s;
-  }
+address a:hover{
+  color:  #ff6338;
+  transition: all 0.5s;
+}
