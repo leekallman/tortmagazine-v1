@@ -1,0 +1,29 @@
+/*support*/
+
+.support{
+  max-width:500px;
+  text-align: center;;
+  margin: 150px auto;
+}
+.support-copy{
+  font-size: 16px;
+  
+}
+.support-copy a{
+  text-decoration: none;
+  font-style: normal;
+  color:#000;
+  
+  font-size: 16px;
+}
+
+.support-copy a:hover{
+  color:#ff6338;
+  transition: all 0.5s;
+}
+.top{
+  text-align: center;
+}
+.top a{
+  color:red;
+}
