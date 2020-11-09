@@ -2,6 +2,7 @@
 /*index page*/
 .home{
   height:100vh;
+  position: relative;
 }
 
 .home img{
@@ -15,8 +16,7 @@
 .values{
   position:absolute;
   bottom:30%;
-  left:0%;
-  text-align:center;
+  left:1%;
   font-size:88px;
   font-weight: 500;
   letter-spacing: -5px;
@@ -24,15 +24,13 @@
 }
 
 .values:hover{
-  transform: scale(1.05) /*translateX(2%) */translateY(10%);
+  transform: scale(1.01) /*translateX(2%) */translateY(2%);
 }
 .published{
   font-family: 'HelveticaNeueBold';
   position:absolute;
   bottom:42%;
-  left:25%;
-  font-size:50px;
-  font-weight: 700;
+  left:20%;
   color:#ff6338;
   line-height: 1.2;
 }
@@ -70,4 +68,29 @@
 .published .letter {
   display: inline-block;
   line-height: 2em;
+}
+
+
+@media screen and (max-width:900px){
+  .published{
+    font-size: 3em;
+    bottom: 60%;
+  }
+  .values{
+    font-size: 4em;
+    line-height: 0.9;
+    letter-spacing: 1.5px;
+    bottom: 50%;
+  }
+
+
+@media screen and (max-width:700px){
+  .published {
+    line-height: 0.5;
+  }
+
+  .values{
+
+
+}
 }
